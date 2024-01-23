@@ -7,4 +7,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+
+  namespace :api do
+    namespace :v0 do
+      post "subscriptions", to: "subscriptions#create"
+      post "subscriptions/cancel", to: "subscriptions#cancel"
+      get "users", to: "users/subscriptions#index"
+    end
+  end 
 end
