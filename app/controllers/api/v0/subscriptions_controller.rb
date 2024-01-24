@@ -10,7 +10,7 @@ class Api::V0::SubscriptionsController < ApplicationController
   def cancel
     subscription = Subscription.find_by(customer_id: params[:customer_id], tea_id: params[:tea_id])
     subscription.update!(status: 1)
-    render json: SubscriptionSerializer.new(subscriptions)
+    render json: SubscriptionSerializer.new(subscription)
   end
 
   private

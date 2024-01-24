@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "Subscriptions Create" do
-  it "create vote" do
+  it "create subscription" do
     test_data
     new_tea = {
       customer_id: @customer2.id,
@@ -11,12 +11,15 @@ describe "Subscriptions Create" do
       price: 7,
     }
 
+    expect(Subscription.all.count).to eq(3)
 
     post "/api/v0/subscriptions", params: new_tea.to_json, headers: { 'CONTENT_TYPE' => 'application/json', 'ACCEPT' => 'application/json' }
-
+    
     expect(response).to be_successful
     expect(response.status).to eq(201)
-
+    
+    expect(Subscription.all.count).to eq(4)
+    
     subscription = JSON.parse(response.body, symbolize_names: true)[:data]
     expect(subscription[:id].to_i).to be_a Integer
     expect(subscription[:id].to_i).to_not eq(0)

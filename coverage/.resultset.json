@@ -272,6 +272,44 @@
           null
         ]
       },
+      "/Users/michaelkuhlmeier/turing_work/4mod/projects/tea_sub/spec/requests/api/v0/subscriptions/cancel_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/michaelkuhlmeier/turing_work/4mod/projects/tea_sub/spec/requests/api/v0/subscriptions/create_spec.rb": {
         "lines": [
           1,
@@ -287,10 +325,13 @@
           null,
           null,
           null,
-          null,
           1,
           null,
           1,
+          null,
+          1,
+          1,
+          null,
           1,
           null,
           1,
@@ -314,6 +355,12 @@
           1,
           null,
           1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
           1,
           1,
           1,
@@ -321,15 +368,9 @@
           null,
           null,
           1,
-          0,
-          0,
-          0,
-          null,
           null,
           1,
-          null,
-          1,
-          1,
+          2,
           null,
           null,
           null
@@ -356,6 +397,6 @@
         ]
       }
     },
-    "timestamp": 1706055470
+    "timestamp": 1706055954
   }
 }
