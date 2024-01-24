@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     namespace :v0 do
       post "subscriptions", to: "subscriptions#create"
       patch "subscriptions/cancel", to: "subscriptions#cancel"
-      get "users", to: "users/subscriptions#index"
+      get "customers/:id/subscriptions", to: "customers/subscriptions#index"
     end
   end 
 end
